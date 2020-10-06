@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EndlessCode</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav id="nav" onclick="toggleMenu();">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png">
+      </a>
+    </div>
+    <div class="menu-mobile" onclick="toggleMenu();">
+      <div id="menu-button" onclick="toggleMenu();">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- <a>Menu</a> -->
+    </div>
+    <ul id="menu-list">
+      <li><a href="course.html">Explore</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+
+      <div class="right-list">
+        <li><a href="daftar.html" class="create-account">Daftar</a></li>
+        <li><a href="login.html" class="button-sign-in">Login</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <section id="landing-page">
+    <div class="intro">
+      <div id="overlay-form" onclick="closeOverlayForm()"></div>
+      <div class="left-intro">
+        <div class="form-frame">
+          <div class="form-frame-header">
+            <h3>Daftar Sekarang!</h3>
+          </div>
+          <div class="introduction">
+            <p><span class="text-center d-block">Perjalananmu dimulai disini...</span>Daftar akun gratis dan mulai
+              belajar. Akses berbagai konten-konten gratis. Siap-siap bertemu Halo Dunia!</p>
+          </div>
+          <form class="form-sign-up">
+            <div class="form-input">
+              <input type="text" required="">
+              <label>Nama</label>
+            </div>
+            <div class="form-input">
+              <input type="text" required="">
+              <label>Email</label>
+            </div>
+            <div class="form-input">
+              <input type="password" required="">
+              <label>Password</label>
+            </div>
+            <button class="btn btn-large f-right">Daftar</button>
+          </form>
+        </div>
+      </div>
+      <div id="left-intro-mobile">
+        <div class="form-frame">
+          <div class="form-frame-header">
+            <a onclick="closeOverlayForm()" class="close-form-mobile">close</a>
+            <h3>Sign Up</h3>
+          </div>
+          <div class="introduction">
+            <h3>Perjalananmu dimulai disini...</h3>
+            <p>Daftar akun gratis dan mulai belajar. Akses berbagai konten-konten gratis. Siap-siap bertemu Halo Dunia!
+            </p>
+          </div>
+          <form class="form-sign-up">
+            <div class="form-input">
+              <input type="text" required="">
+              <label>Nama</label>
+            </div>
+            <div class="form-input">
+              <input type="text" required="">
+              <label>Email</label>
+            </div>
+            <div class="form-input">
+              <input type="password" required="">
+              <label>Password</label>
+            </div>
+            <button class="btn f-right">Daftar</button>
+          </form>
+        </div>
+      </div>
+      <div class="right-intro">
+        <video id="video" loop autoplay="true" muted="muted">
+          <source src="videos/video.mp4" type="video/mp4">
+        </video>
+
+        <div class="intro-content">
+          <h1>LEARN. PRACTICE. BUILD. CONTRIBUTE.</h1><br>
+          <p class="intro-p">Miliki jurus untuk berkontribusi menjadi manusia yang bermanfaat terhadap developer dan
+            startup Indonesia. EndlessCode tempat nya belajar pemrograman, #Yosh.</p><br>
+          <button id="button-sign-in-mobile" class="btn btn-large" onclick="openForm()">Daftar</button>
+        </div>
+
+      </div>
+    </div>
+  </section> <!-- end of landing page -->
+
+
+  <section class="features">
+    <div class="features-text-box">
+      <div class="features-text">
+        <h2>
+          <span class="highlight">Kenapa Pilih</span>
+          <br>
+          EndlessCode?
+        </h2>
+
+        <p>
+          Miliki jurus untuk berkontribusi menjadi manusia yang bermanfaat terhadap developer dan startup Indonesia.
+          EndlessCode tempat nya belajar pemrograman
+        </p>
+      </div>
+    </div> <!-- end of features-text-box -->
+
+    <div class="features-content-box">
+      <div class="features-content-wrapper">
+        <div class="row">
+          <div class="column column-6">
+            <div class="features-header-text">
+              <i class="fas fa-book"></i>
+              <h3>Learn</h3>
+            </div>
+            <p>
+              Tingkatkan ilmu kamu dengan 500+ konten berkualitas yang akan terus bertambah setiap minggu nya, sehingga
+              tetap menggunakan teknologi terbaru, bukan yang outdated.
+            </p>
+          </div>
+          <div class="column column-6">
+            <div class="features-header-text">
+              <i class="fas fa-laptop-code"></i>
+              <h3>Practice</h3>
+            </div>
+            <p>
+              Praktekkan apa yang telah kamu melalui quiz dan project yang akan membantu kamu mengingat dan memahami
+              bagaimana menggunakan sesuatu yang telah kamu pelajari.
+            </p>
+          </div>
+          <div class="column column-6">
+            <div class="features-header-text">
+              <i class="fas fa-cogs"></i>
+              <h3>Build</h3>
+            </div>
+            <p>
+              Mulai membangun project yang lebih kompleks dengan berbagai challenges dan real-world projects. Sehingga
+              kamu bisa meningkatkan kekuatan mu dan portofolio kamu.
+            </p>
+          </div>
+          <div class="column column-6">
+            <div class="features-header-text">
+              <i class="fas fa-trophy"></i>
+              <h3>Contribute</h3>
+            </div>
+            <p>
+              Mulai membangun project yang lebih kompleks dengan berbagai challenges dan real-world projects. Sehingga
+              kamu bisa meningkatkan kekuatan mu dan portofolio kamu.
+            </p>
+          </div>
+        </div> <!-- end of row -->
+      </div> <!-- end of features-content-wrapper -->
+    </div> <!-- features-content-box -->
+  </section> <!-- end of features -->
+
+  <section class="partnership">
+    <div class="wrapper">
+
+      <h2>Partner dari EndlessCode</h2>
+      <!-- <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, cupiditate blanditiis est accusantium quam
+        quaerat ipsam magni voluptatibus maxime repudiandae?
+      </p> -->
+
+      <ul>
+        <li><img src="images/google.png" alt="partner logo"></li>
+        <li><img src="images/sekolah-koding.png" alt="partner logo"></li>
+        <li><img src="images/petanikode.png" alt="partner logo"></li>
+        <li><img src="images/codepolitan.png" alt="partner logo"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="testimoni-section">
+    <div class="left-layout">
+      <div class="testimoni-header">
+        <div class="testimoni-text">
+          <h3>Kata</h3>
+          <h4>Mereka</h4>
+        </div>
+      </div>
+    </div>
+    <div class="right-layout">
+      <div id="frame-stories">
+        <div id="gradient-horizontal"></div>
+        <div id="list-stories">
+          <div class="column-testimony card-stories">
+            <div class="stories-title">
+              <img class="user-img" src="images/danis.jpeg">
+              <div class="user-name">
+                <h4>Danis Zadian</h4>
+                <p>Designer & Programmer</p>
+              </div>
+            </div>
+            <div class="stories-body">
+              <p>Belajar di EndlessCode mantap! Kualitas konten nya bagus, jadi udah dapat gambaran untuk kedepannya.
+                Sukses buat EndlessCode.</p>
+            </div>
+          </div>
+
+          <div class="column-testimony card-stories">
+            <div class="stories-title">
+              <img class="user-img" src="images/fadli.jpg">
+              <div class="user-name">
+                <h4>Fadli Hidayatullah</h4>
+                <p>Web Developer at HeroCode</p>
+              </div>
+            </div>
+            <div class="stories-body">
+              <p>Hidup itu Perjuangan. Ketika kamu memutuskan untuk menjadi programmer, artinya kamu siap untuk
+                menjalani konsekuensinya. </p>
+            </div>
+          </div>
+
+          <div class="column-testimony card-stories">
+            <div class="stories-title">
+              <img class="user-img" src="images/derah.jpg">
+              <div class="user-name">
+                <h4>Derah</h4>
+                <p>Network Engineer</p>
+              </div>
+            </div>
+            <div class="stories-body">
+              <p>Seorang Network Engineer juga perlu belajar ngoding. Instruktor nya asik hahaha!</p>
+            </div>
+          </div>
+
+          <div class="column-testimony card-stories">
+            <div class="stories-title">
+              <img class="user-img" src="images/haris.jpg">
+              <div class="user-name">
+                <h4>Haris</h4>
+                <p>Programmer at BukaLapak</p>
+              </div>
+            </div>
+            <div class="stories-body">
+              <p>EndlessCode salah satu situs belajar pemrograman Bahasa Indonesia rekomendasi saya.</p>
+            </div>
+          </div>
+          <div class="column-testimony card-stories">
+            <div class="stories-title">
+              <img class="user-img" src="images/oxy.jpg">
+              <div class="user-name">
+                <h4>Oxy</h4>
+                <p>Professional Gamer at Moontoon</p>
+              </div>
+            </div>
+            <div class="stories-body">
+              <p>Nge-game sekalian nge-code dua kombinasi yang ajib jika kalian ketahui.</p>
+            </div>
+          </div>
+          <div class="all-stories">
+            <div class="overlay-all-stories">
+              <a href="">View <br> All Stories</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-stories">
+        <a onclick="backStories()" id="backStories"><i class="fa fa-caret-left"></i></a>
+        <a onclick="nextStories()" id="nextStories"><i class="fa fa-caret-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="getting-started">
+    <div class="wrapper">
+      <div class="content">
+        <h2>Sudah siap memulai petualanganmu?</h2>
+        <h5>Tunggu apa lagi, mulai sekarang juga dan ciptakan masa depan terbaik mu
+          <br>
+          mulai dari <span class="bold">Rp 50.000</span> per bulan
+        </h5>
+
+        <a href="pricing.html" class="btn btn-white">Daftar Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="row">
+        <div class="column column-6">
+          <h5>EndlessCode</h5>
+          <p>
+            EndlessCode adalah sebuah platform yang didedikasikan untuk kamu yang mau belajar pemrograman dan siap
+            menjadi professional programmer. Learn Practice. Build. Contribute.
+          </p>
+          <div class="social">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column column-3">
+          <ul class="footer-link">
+            <li class="header">Belajar</li>
+            <li><a href="#">Kursus</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Member Premium</a></li>
+          </ul>
+        </div>
+        <div class="column column-3">
+          <ul class="footer-link">
+            <li class="header">Informasi</li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Syarat dan Ketentuan</a></li>
+            <li><a href="#">Loker</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </div>
+      </div> <!-- end of row -->
+    </div> <!-- end of wrapper -->
+
+    <p class="copyright">&copy; EndlessCode 2018</p>
+
+    <div class="contact">
+      <div id="contactForm" class="contact-form">
+        <div class="avatar">
+          <img src="images/ayana.jpeg" alt="Customer Serice">
+          <h5>Ayana Moon</h5>
+        </div>
+        <div class="greetings">
+          Assalammu'alaikum, kamu memiliki saran atau pertanyaan seputar <span class="bold">EndlessCode</span>? Kami
+          siap untuk membantu kamu dengan segera.
+        </div>
+        <form>
+          <div class="element-form">
+            <input type="email" placeholder="Masukkan email">
+          </div>
+          <div class="element-form">
+            <textarea class="message" placeholder="Ketikkan pesan kamu disini..."></textarea>
+          </div>
+
+        </form>
+      </div>
+
+      <button id="btnContact" class="btn btn-contact"><i class="fas fa-comments"></i> Hubungi Kami</button>
+    </div>
+  </footer> <!-- end of footer -->
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

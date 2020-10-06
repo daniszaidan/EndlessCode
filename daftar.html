@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EndlessCode</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .white-list{
+            color: white;
+        }
+        /*Tablet (Smaller 760px)*/
+        @media (max-width: 760px){
+            .white-list{
+                color: #525c65;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav id="nav" onclick="toggleMenu();">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png">
+            </a>
+          </div>
+          <div class="menu-mobile" onclick="toggleMenu();">
+            <div id="menu-button" onclick="toggleMenu();">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- <a>Menu</a> -->
+          </div>
+          <ul id="menu-list">
+            <li><a href="course.html" class="white-list">Explore</a></li>
+            <li><a href="pricing.html" class="white-list">Pricing</a></li>
+            <li><a href="about.html" class="white-list">About</a></li>
+
+            <div class="right-list">
+              <li><a href="daftar.html" class="create-account">Daftar</a></li>
+              <li><a href="login.html" class="button-sign-in">Login</a></li>
+            </div>
+          </ul>
+        </nav>
+    </header>
+    
+    <section id="login">
+        <div class="form-frame">
+            <div class="form-frame-header">
+                <h3>Daftar</h3>
+            </div>
+            <div class="introduction">
+                <h3>Daftar akun gratis dan mulai belajar</h3>
+            </div>
+            <form class="form-sign-up">
+                <div class="form-input">
+                    <input type="text" required="">
+                    <label>Nama</label>
+                </div>
+                <div class="form-input">
+                    <input type="text" required="">
+                    <label>Email</label>
+                </div>
+                <div class="form-input">
+                    <input type="password" required="">
+                    <label>Password</label>
+                </div>
+                <a href="" class="link-sign-up">Buat akun</a>
+                <button class="button-sign-in f-right">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

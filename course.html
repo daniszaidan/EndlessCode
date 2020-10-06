@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EndlessCode</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="overlay"></div>
+
+    <header>
+        <nav id="nav" onclick="toggleMenu();">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png">
+            </a>
+          </div>
+          <div class="menu-mobile" onclick="toggleMenu();">
+            <div id="menu-button" onclick="toggleMenu();">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- <a>Menu</a> -->
+          </div>
+          <ul id="menu-list">
+            <li><a href="course.html">Explore</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about.html">About</a></li>
+
+            <div class="right-list">
+              <li><a href="daftar.html" class="create-account-black">Daftar</a></li>
+              <li><a href="login.html" class="button-sign-in">Login</a></li>
+            </div>
+          </ul>
+        </nav>
+    </header>
+
+    
+    <section id="kursus">
+        <div class="wrapper">
+            <div class="clearfix">
+                <div class="header-kursus">
+                    <div class="intro-kursus">
+                        <h3>Mulai Petualangan</h3>
+                        <p>Akses ratusan kursus & video mulai dari HTML, CSS, Javascript, JQuery, NodeJS, Angular dan masih banyak lagi !</p>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="search-button" id="search-button" onclick="search()"><i class="fa fa-search"></i></a></button>
+                    <input type="text" id="search-input">
+                    <button class="category-button" onclick="category()">category</button>
+                    <div class="category-list" id="category-list">
+                        <a href="">Course</a>
+                        <a href="">Screencast</a>
+                        <a href="">Project</a>
+                        <a href="">Popcast</a>
+                        <a href="">Discussion</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix marbot">
+                <ul class="tab">
+                    <li class="list-tab active"><a href="#home">Frontend</a></li>
+                    <li class="list-tab"><a href="#profile">Backend</a></li>
+                    <li class="list-tab"><a href="#settings">Laravel</a></li>
+                    <li class="list-tab"><a href="#settings">CodeIgniter</a></li>
+                    <li class="list-tab"><a href="#settings">NodeJS</a></li>
+                    <li class="list-tab"><a href="#settings">VueJS</a></li>
+                </ul>
+            </div>
+
+            <div class="clearfix">
+                <div class="card-frame" onclick='location.href="course-page.html"'>
+                    <div class="card">
+                        <div class="course-frame">
+                            
+                            <div class="course-title">
+                                <div class="icon-course">
+                                    <!-- <img src="images/danis.jpeg"> -->
+                                    <i class="fa fa-book-open"></i>
+                                </div>
+                                <div class="course-name">
+                                    <a href="">Course</a>
+                                    <a href="course-page.html"><h5>Membuat Navigasi Bar</h5></a>
+                                </div>
+                            </div>
+
+                            <div class="course">
+                                <p>Pelajari bagaimana membuat halaman website dengan menggunakan HTML (Hyoer Text Markup Language) bahasa standar...</p>
+                            </div>
+                            <div class="course-tag">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="card-frame" onclick='location.href="course-page.html"'>
+                    <div class="card">
+                        <div class="course-frame">
+
+                            <div class="course-title">
+                                <div class="icon-course">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="course-name">
+                                    <a href="">Screencast</a>
+                                    <a href="course-page.html"><h5>Menelusuri CSS Selector</h5></a>
+                                </div>
+                            </div>
+
+                            <div class="course">
+                                <p>Pada screencast kali ini kita akan mempelajari 30+ selector yang ada pada CSS. Kia akan memahami ke-powefull-an CSS, tips dan trik yang...</p>
+                            </div>
+                            <div class="course-tag">
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-frame" onclick='location.href="course-page.html"'>
+                    <div class="card">
+                        <div class="course-frame">
+
+                            <div class="course-title">
+                                <div class="icon-course">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="course-name">
+                                    <a href="">Project</a>
+                                    <a href="course-page.html"><h5>Membuat Website Portofolio</h5></a>
+                                </div>
+                            </div>
+
+                            <div class="course">
+                                <p>Pada sudi kasus ini kita akan membuat website portofolio pertama kita dengan desain material dan elegant. Kamu juga akan belajar</p>
+                            </div>
+                            <div class="course-tag">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Javascript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-frame" onclick='location.href="course-page.html"'>
+                    <div class="card">
+                        <div class="course-frame">
+
+                            <div class="course-title">
+                                <div class="icon-course">
+                                    <i class="fas fa-podcast"></i>
+                                </div>
+                                <div class="course-name">
+                                    <a href="">Popcast</a>
+                                    <a href="course-page.html"><h5>Semangat Kontribusi !</h5></a>
+                                </div>
+                            </div>
+
+                            <div class="course">
+                                <p>Santai sedikit, berbagai mengenai semangat kontribusi. Meluruskan niat dalam belajar, berbagi pengalaman, kontribusi pada devoloper...</p>
+                            </div>
+                            <div class="course-tag">
+                                <span>Refreshing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-frame" onclick='location.href="course-page.html"'>
+                    <div class="card">
+                        <div class="course-frame">
+
+                            <div class="course-title">
+                                <div class="icon-course">
+                                    <i class="fa fa-book-open"></i>
+                                </div>
+                                <div class="course-name">
+                                    <a href="">Course</a>
+                                    <a href="course-page.html"><h5>CRUD dengan PHP & AJAX</h5></a>
+                                </div>
+                            </div>
+
+                            <div class="course">
+                                <p>Kita akan belajar menggunakan teknik CRUD dengan Ajax, sehingga fungsi-fungsi CRUD akan dijalankan tanpa mereload atau refresh halaman sama sekali !</p>
+                            </div>
+                            <div class="course-tag">
+                                <span>PHP</span>
+                                <span>MYSQL</span>
+                                <span>AJAX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-frame" onclick='location.href="course-page.html"'>
+                    <div class="card">
+                        <div class="course-frame">
+
+                            <div class="course-title">
+                                <div class="icon-course">
+                                    <i class="fa fa-book-open"></i>
+                                </div>
+                                <div class="course-name">
+                                    <a href="">Course</a>
+                                    <a href="course-page.html"><h5>Belajar NodeJS</h5></a>
+                                </div>
+                            </div>
+
+                            <div class="course">
+                                <p>Kita akan mempeljari dasar dari server-side language populer yang disebut NodeJS. Kita akan membuat aplikasi chat, todo-list, dll</p>
+                            </div>
+                            <div class="course-tag">
+                                <span>NodeJS</span>
+                                <span>Javascript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+    <div class="wrapper">
+      <div class="row">
+        <div class="column column-6">
+          <h5>EndlessCode</h5>
+          <p>
+            EndlessCode adalah sebuah platform yang didedikasikan untuk kamu yang mau belajar pemrograman dan siap
+            menjadi professional programmer. Learn Practice. Build. Contribute.
+          </p>
+          <div class="social">
+            <ul>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="column column-3">
+          <ul class="footer-link">
+            <li class="header">Belajar</li>
+            <li><a href="#">Kursus</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Member Premium</a></li>
+          </ul>
+        </div>
+        <div class="column column-3">
+          <ul class="footer-link">
+            <li class="header">Informasi</li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Syarat dan Ketentuan</a></li>
+            <li><a href="#">Loker</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </div>
+      </div> <!-- end of row -->
+    </div> <!-- end of wrapper -->
+
+    <p class="copyright">&copy; EndlessCode 2018</p>
+
+    <div class="contact">
+      <div id="contactForm" class="contact-form">
+        <div class="avatar">
+          <img src="images/ayana.jpeg" alt="Customer Serice">
+          <h5>Ayana Moon</h5>
+        </div>
+        <div class="greetings">
+          Assalammu'alaikum, kamu memiliki saran atau pertanyaan seputar <span class="bold">EndlessCode</span>? Kami
+          siap untuk membantu kamu dengan segera.
+        </div>
+        <form>
+          <div class="element-form">
+            <input type="email" placeholder="Masukkan email">
+          </div>
+          <div class="element-form">
+            <textarea class="message" placeholder="Ketikkan pesan kamu disini..."></textarea>
+          </div>
+
+        </form>
+      </div>
+
+      <button id="btnContact" class="btn btn-contact"><i class="fas fa-comments"></i> Hubungi Kami</button>
+    </div>
+  </footer> <!-- end of footer -->
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
